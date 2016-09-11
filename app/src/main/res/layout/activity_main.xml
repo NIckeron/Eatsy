@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="90dp"
+        android:background="#dfeee3"
+        android:padding="20dp"
+        android:text="@string/sign_up"
+        android:textColor="#634646"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="#dfeee3"
+        android:padding="20dp"
+        android:text="@string/log_in"
+        android:textColor="#634646"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="or"
+        android:textColor="#918e8e"
+        android:textSize="30dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/log"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/or"
+        android:background="#dfeee3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/log"
+        android:layout_margin="25dp"
+        android:layout_toLeftOf="@id/or"
+        android:background="#dfeee3" />
+
+    <Button
+        android:id="@+id/trynow"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="@string/try_now"
+        android:textColor="#634646"
+        android:textSize="33dp" />
+
+
+</RelativeLayout>

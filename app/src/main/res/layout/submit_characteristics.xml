@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/man_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#8bc395"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@drawable/man" />
+
+        <Button
+            android:id="@+id/genre_man"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Άνδρας" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/woman_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#8bc395"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/woman"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@drawable/woman" />
+
+        <Button
+            android:id="@+id/genre_woman"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Γυναίκα" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/man_button"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#dfeee3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Ύψος"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#8bc395"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="cm"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/height"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Βάρος"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#8bc395"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="kg"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/weight"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Ηλικία"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#8bc395"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ετών"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#bbbbbb"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/go_back" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:text="back"
+            android:textAllCaps="true"
+            android:textColor="#555555"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:background="#bbbbbb"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="next"
+            android:textAllCaps="true"
+            android:textColor="#555555"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/go_next" />
+    </LinearLayout>
+</RelativeLayout>

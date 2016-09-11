@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundshapebutton"
+            android:src="@drawable/go_back" />
+
+        <TextView
+            android:id="@+id/meal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/go_back"
+            android:layout_toRightOf="@+id/go_back"
+            android:padding="10dp"
+            android:text="Σαλάτα με κοτόπουλο και σως γιαουρτιού"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/cost_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/go_back"
+            android:layout_alignStart="@+id/go_back"
+            android:layout_below="@+id/meal_name"
+            android:text="Μέσο Κόστος: 3$" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/meal_name"
+            android:layout_marginRight="20dp"
+            android:text="20 λεπτά" />
+
+        <ImageView
+            android:id="@+id/clock_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/go_back"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toStartOf="@+id/time"
+            android:src="@drawable/time" />
+
+        <View
+            android:id="@+id/separatingline"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/time"
+            android:layout_margin="5dp"
+            android:background="#3b984b" />
+
+        <ImageView
+            android:id="@+id/meal_picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignEnd="@+id/time"
+            android:layout_alignRight="@+id/time"
+            android:layout_below="@+id/separatingline"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/chicken" />
+
+
+        <FrameLayout
+            android:id="@+id/Fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/cost_text"
+            android:layout_alignLeft="@id/cost_text"
+            android:layout_alignRight="@id/cost_text"
+            android:layout_alignStart="@id/cost_text"
+            android:layout_below="@id/separatingline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="22dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Λιπαρά" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/Protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/cost_text"
+            android:layout_alignLeft="@id/cost_text"
+            android:layout_alignRight="@id/cost_text"
+            android:layout_alignStart="@id/cost_text"
+            android:layout_below="@id/Fat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="22dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Πρωτεΐνη" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/Carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/cost_text"
+            android:layout_alignLeft="@id/cost_text"
+            android:layout_alignRight="@id/cost_text"
+            android:layout_alignStart="@id/cost_text"
+            android:layout_below="@id/Protein"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="22dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Υδατάνθρακες" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/Vitamins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/cost_text"
+            android:layout_alignLeft="@id/cost_text"
+            android:layout_alignRight="@id/cost_text"
+            android:layout_alignStart="@id/cost_text"
+            android:layout_below="@id/Carbs"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="22dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Βιταμίνες" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/difficulty"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/meal_picture"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/meal_picture"
+            android:layout_toStartOf="@+id/meal_picture"
+            android:src="@drawable/chef" />
+
+        <TextView
+            android:id="@+id/difficulty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Vitamins"
+            android:layout_margin="20dp"
+            android:text="Δυσκολία:"
+            android:textSize="15dp" />
+
+
+        <ImageView
+            android:id="@+id/ingredients_pic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/recipetitle"
+            android:layout_alignEnd="@+id/meal_ingredients"
+            android:layout_alignRight="@+id/meal_ingredients"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ingredients" />
+
+        <TextView
+            android:id="@+id/recipetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_picture"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="Συστατικά"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/meal_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cost_text"
+            android:layout_alignStart="@+id/cost_text"
+            android:layout_below="@+id/recipetitle"
+            android:layout_marginLeft="40dp"
+            android:text="Για το γεύμα" />
+
+        <TextView
+            android:id="@+id/sauce_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipetitle"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toStartOf="@+id/time"
+            android:text="Για τη σως" />
+
+        <TextView
+            android:id="@+id/sauce_ingredients_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/meal_picture"
+            android:layout_alignRight="@+id/meal_picture"
+            android:layout_below="@+id/sauce_ingredients"
+            android:layout_marginTop="10dp"
+            android:text="3 κ.σ. γιαούρτι\n2 κ.σ μέλι\n5-6 φύλλα δυόσμο, ψιλοκομμένο
+5 κλ. φρέσκο θυμάρι, ψιλοκομμένο\nξύσμα και χυμό από 1 λεμόνι\n1 κ.σ. ελαιόλαδο
+αλάτι\nπιπέρι" />
+
+        <TextView
+            android:id="@+id/meal_ingredients_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/difficulty_text"
+            android:layout_alignStart="@+id/difficulty_text"
+            android:layout_alignTop="@+id/sauce_ingredients_text"
+            android:text="1 στήθος κοτόπουλο
+λίγο ελαιόλαδο
+πιπέρι φρέσκο
+αλάτι
+1 κλ. θυμάρι, ρίγανη, δενδρολίβανο
+2 σκ. σκόρδο, σπασμένες
+2 κ.σ. βούτυρο
+10 φύλλα λόλες ,
+10 φύλλα μαρουλιού" />
+
+        <TextView
+            android:id="@+id/execution_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_ingredients_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="Μέθοδος Εκτέλεσης"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/cook_pic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/execution_title"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/cook" />
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/cook_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Προθερμαίνουμε τον φούρνο στους 180 βαθμούς στον αέρα.
+Λαδώνουμε και αλατοπιπερώνουμε το φιλέτο μας. Αλείφουμε καλά με τα χέρια μας να πάει παντού.
+Βάζουμε ένα τηγάνι στη φωτιά να κάψει καλά, σε σημείο που να βγάζει καπνούς.
+Δίνουμε χρώμα στο φιλέτο μας, στο τηγάνι.
+Παράλληλα, παίρνουμε ένα μικρό ταψάκι, ίσα-ίσα να χωράει το κοτόπουλο μέσα και βάζουμε στον πάτο τα 3 κλαδάκια απο τα μυρωδικά και το σκόρδο.
+Όταν πάρει το κοτόπουλο χρώμα, το μεταφέρουμε στο ταψάκι πάνω απο τα μυρωδικά. Με τον τρόπο αυτό, όταν ψήνεται θα περάσουν όλα τα αρώματα μέσα στο κοτόπουλο.
+Λιώνουμε το βούτυρο και το ρίχνουμε καυτό πάνω από το κοτόπουλο.
+Ψήνουμε στον φούρνο για 15 λεπτά.
+Όταν είναι έτοιμο, το κόβουμε σε φέτες και αφήνουμε στην άκρη.
+Πλένουμε με νερό και ξύδι τις λόλες και το μαρούλι.
+Τα κόβουμε και τα προσθέτουμε σε ένα μπολ.
+Σε ένα μπολάκι, προσθέτουμε το γιαούρτι, το μέλι, το δυόσμο, το θυμάρι, το ξύσμα και το χυμό από το λεμόνι, ελαιόλαδο, αλάτι και πιπέρι και ανακατεύουμε μέχρι να πάρει ωραία υφή.
+Προσθέτουμε την σος στο μπολ με τη σαλάτα και ανακατεύουμε να πάει παντού.
+Στο τέλος προσθέτουμε και το κοτόπουλο πάνω από τη σαλάτα μας. " />
+
+    </RelativeLayout>
+</ScrollView>
